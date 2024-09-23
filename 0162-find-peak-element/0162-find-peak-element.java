@@ -12,7 +12,6 @@ class Solution {
                     index = i;
                 }
             }
-            System.out.println("p1: "+p1+" p2: "+p2);
             if((max!=nums[p1]) && (max!=nums[p2-1])) {
                 return index;
             } else {
