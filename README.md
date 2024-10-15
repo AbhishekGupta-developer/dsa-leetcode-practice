@@ -52,4 +52,12 @@
 |  |
 | ------- |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
+## String
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/0020-valid-parentheses) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
