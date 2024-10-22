@@ -4,6 +4,7 @@
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/0001-two-sum) |
 | [0015-3sum](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0056-merge-intervals](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/0056-merge-intervals) |
@@ -39,6 +40,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/0001-two-sum) |
 | [0169-majority-element](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/0217-contains-duplicate) |
 ## Divide and Conquer
