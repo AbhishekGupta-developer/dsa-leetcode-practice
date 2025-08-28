@@ -18,6 +18,7 @@
 |  |
 | ------- |
 | [0152-maximum-product-subarray](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/0152-maximum-product-subarray) |
+| [1013-fibonacci-number](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/1013-fibonacci-number) |
 ## Two Pointers
 |  |
 | ------- |
@@ -67,4 +68,16 @@
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/0020-valid-parentheses) |
+## Math
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/1013-fibonacci-number) |
+## Recursion
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/1013-fibonacci-number) |
+## Memoization
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/AbhishekGupta-developer/dsa-leetcode-practice/tree/master/1013-fibonacci-number) |
 <!---LeetCode Topics End-->
