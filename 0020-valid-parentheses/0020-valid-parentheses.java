@@ -1,33 +1,32 @@
 class Solution {
     public boolean isValid(String s) {
-        int length = s.length();
-
         Stack<Character> stack = new Stack<>();
 
-        for(int i = 0; i < length; i++) {
-            char ch = s.charAt(i);
-            if(ch == '(' || ch == '{' || ch == '[') {
-                stack.push(ch);
+        for(int i = 0; i < s.length(); i++) {
+            if(s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{') {
+                stack.push(s.charAt(i));
             } else {
-                if(ch == ')') {
-                    if(stack.size() == 0 || stack.peek() != '(') {
-                        return false;
+                if(stack.size() == 0) {
+                    return false;
+                } else {
+                    if(s.charAt(i) == ')') {
+                        if(stack.peek() == '(') {
+                            stack.pop();
+                        } else {
+                            return false;
+                        }
+                    } else if(s.charAt(i) == ']') {
+                        if(stack.peek() == '[') {
+                           stack.pop();
+                        } else {
+                            return false;
+                        }
                     } else {
-                        stack.pop();
-                    }
-                }
-                if(ch == '}') {
-                    if(stack.size() == 0 || stack.peek() != '{') {
-                        return false;
-                    } else {
-                        stack.pop();
-                    }
-                }
-                if(ch == ']') {
-                    if(stack.size() == 0 || stack.peek() != '[') {
-                        return false;
-                    } else {
-                        stack.pop();
+                        if(stack.peek() == '{') {
+                            stack.pop();
+                        } else {
+                            return false;
+                        }
                     }
                 }
             }
@@ -38,7 +37,5 @@ class Solution {
         } else {
             return true;
         }
-
-
     }
 }
