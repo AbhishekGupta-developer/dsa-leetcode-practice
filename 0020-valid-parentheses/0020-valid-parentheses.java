@@ -9,24 +9,14 @@ class Solution {
                 if(stack.size() == 0) {
                     return false;
                 } else {
-                    if(s.charAt(i) == ')') {
-                        if(stack.peek() == '(') {
-                            stack.pop();
-                        } else {
-                            return false;
-                        }
-                    } else if(s.charAt(i) == ']') {
-                        if(stack.peek() == '[') {
-                           stack.pop();
-                        } else {
-                            return false;
-                        }
+                    if(
+                        (s.charAt(i) == ')' && stack.peek() == '(') ||
+                        (s.charAt(i) == ']' && stack.peek() == '[') ||
+                        (s.charAt(i) == '}' && stack.peek() == '{')
+                    ) {
+                        stack.pop();
                     } else {
-                        if(stack.peek() == '{') {
-                            stack.pop();
-                        } else {
-                            return false;
-                        }
+                        return false;
                     }
                 }
             }
