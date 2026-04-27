@@ -3,17 +3,19 @@ class Solution {
         if(s.length() % 2 != 0) {
             return false;
         }
-        
+
         Stack<Character> stack = new Stack<>();
 
         for(int i = 0; i < s.length(); i++) {
-            if(s.charAt(i) == 40 || s.charAt(i) == 91 || s.charAt(i) == 123) {
-                stack.push(s.charAt(i));
+            char ch1;
+            int ch = ch1 = s.charAt(i);
+            if(ch == 40 || ch == 91 || ch == 123) {
+                stack.push(ch1);
             } else {
                 if(
-                    (stack.size() > 0 && s.charAt(i) == 41 && stack.peek() == 40) ||
-                    (stack.size() > 0 && s.charAt(i) == 93 && stack.peek() == 91) ||
-                    (stack.size() > 0 && s.charAt(i) == 125 && stack.peek() == 123)
+                    (stack.size() > 0 && ch == 41 && stack.peek() == 40) ||
+                    (stack.size() > 0 && ch == 93 && stack.peek() == 91) ||
+                    (stack.size() > 0 && ch == 125 && stack.peek() == 123)
                 ) {
                     stack.pop();
                 } else {
