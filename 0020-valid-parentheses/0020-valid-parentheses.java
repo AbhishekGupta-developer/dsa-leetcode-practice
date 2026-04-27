@@ -7,10 +7,9 @@ class Solution {
         Stack<Character> stack = new Stack<>();
 
         for(int i = 0; i < s.length(); i++) {
-            char ch1;
-            int ch = ch1 = s.charAt(i);
+            char ch = s.charAt(i);
             if(ch == 40 || ch == 91 || ch == 123) {
-                stack.push(ch1);
+                stack.push(ch);
             } else {
                 if(
                     (stack.size() > 0 && ch == 41 && stack.peek() == 40) ||
