@@ -6,18 +6,14 @@ class Solution {
             if(s.charAt(i) == 40 || s.charAt(i) == 91 || s.charAt(i) == 123) {
                 stack.push(s.charAt(i));
             } else {
-                if(stack.size() == 0) {
-                    return false;
+                if(
+                    (stack.size() > 0 && s.charAt(i) == 41 && stack.peek() == 40) ||
+                    (stack.size() > 0 && s.charAt(i) == 93 && stack.peek() == 91) ||
+                    (stack.size() > 0 && s.charAt(i) == 125 && stack.peek() == 123)
+                ) {
+                    stack.pop();
                 } else {
-                    if(
-                        (s.charAt(i) == 41 && stack.peek() == 40) ||
-                        (s.charAt(i) == 93 && stack.peek() == 91) ||
-                        (s.charAt(i) == 125 && stack.peek() == 123)
-                    ) {
-                        stack.pop();
-                    } else {
-                        return false;
-                    }
+                    return false;
                 }
             }
         }
